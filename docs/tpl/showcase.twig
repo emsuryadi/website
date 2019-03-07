@@ -1,0 +1,14 @@
+<div class="col-lg-12">
+	<br /><hr /><br />
+	<h3><i class="fa fa-file-o"></i>&nbsp;&nbsp;Showcase</h3>
+	<div class="showcase">
+		{% for Item in Data.showcase %}
+		<!-- Item -->
+		<div class="showcase-content">
+			<span class="content-time"><i class="fa fa-calendar-o"></i> Tahun {{ Item.year }}</span>
+			<h2>{{ Item.title }} {% for Tag in Item.tags %}<span class="badge badge-info">{{ Tag }}</span> {% endfor %}</h2>
+			---
+		</div>
+		{% endfor %}
+	</div>
+</div>

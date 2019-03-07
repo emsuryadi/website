@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+		<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' name='viewport'/>
+		<meta content='CV & Portfolio' name='description'/>
+		<meta content='Em Suryadi' name='keywords'/>
+		<title>CV & Portfolio - Em Suryadi</title>
+		<meta content='Em Suryadi' name='author'/>
+		<meta content='#1e88e5' name='theme-color'/>
+		<meta content='#1e88e5' name='msapplication-navbutton-color'/>
+		<link href='res/favicon-32x32.png' rel='icon' sizes='32x32'/>
+		<link href='res/favicon-192x192.png' rel='icon' sizes='192x192'/>
+		<link href='res/favicon-180x180.png' rel='apple-touch-icon'/>
+		<meta content='res/favicon-270x270.png' name='msapplication-TileImage'/>
+		<!-- Stylesheet -->
+		<link href='style.css' rel='stylesheet' type='text/css'/>
+	</head>
+	<body>
+		<div class="navbar" id="navbar-box">
+			<div class="container">
+				<div class="brand">CV & Portfolio</div>
+			</div>
+		</div>
+		{% include "welcome.twig" %}
+		<div class="content" id="content-box">
+			<div class="wrapper" id="wrapper-box">
+				<div class="container">
+					<div class="row">
+						{% include "tentang_saya.twig" %}
+						{% include "ketrampilan.twig" %}
+						{% include "hubungi_saya.twig" %}
+						{% include "showcase.twig" %}
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Script -->
+		<script src="etc/jquery-3.3.1.min.js" type="text/javascript"></script>
+		<script src="etc/app.js" type="text/javascript"></script>
+	</body>
+</html>
