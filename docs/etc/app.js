@@ -7,6 +7,7 @@ $(document).ready(function(){
 	var contentBox	= $("#content-box");
 	var wrapperBox 	= $("#wrapper-box");
 	var navbarBox	= $("#navbar-box");
+	var imgBox		= $("#img-intro-box");
 	var navbarShown	= false;
 	var restTop		= wrapperBox.offset().top;
 	
@@ -44,4 +45,22 @@ $(document).ready(function(){
 		var data = $(this).attr('data-x');
 		alert(Base64.decode(data));
 	});
+
+	// Kedip
+	function getRndInteger(min, max) {
+		return Math.floor(Math.random() * (max - min) ) + min;
+	}
+	function kedip() {
+		setTimeout(function(){
+			// Close eyes
+			imgBox.attr('src', 'res/photo2.jpg');
+			setTimeout(function(){
+				// Open eyes
+				imgBox.attr('src', 'res/photo.jpg');
+				// Loop
+				kedip();
+			}, getRndInteger(100, 200));
+		}, getRndInteger(3000, 10000));
+	}
+	kedip();
 });

@@ -98,6 +98,33 @@ hr {
 		}
 		table {
 			width: 100%;
+			border: 1px solid #eee;
+			td {
+				padding: 5px 10px;
+				border: 1px solid #eee;
+			}
+			@include media-breakpoint-up(sm) {
+				border: 0;
+				td {
+					padding: 0;
+					border: 0;
+				}
+			}
+		}
+		.showcase {
+			.showcase-content {
+				border:1px solid #eee;
+				border-radius: 4px;
+				padding:10px 15px;
+				h2 {
+					font-size: 14px;
+					margin-bottom: 10px;
+				}
+				.content-time {
+					font-size: 14px;
+					color: #777;
+				}
+			}
 		}
 	}
 }
