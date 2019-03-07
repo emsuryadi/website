@@ -25,8 +25,11 @@ html {
 @import "mixins/grid";
 
 @import "grid";
+@import "utilities";
 @import "utilities/display";
 @import "utilities/flex";
 @import "utilities/spacing";
 
 @import "reboot";
+@import "badge";
+@import "progress";

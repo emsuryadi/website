@@ -6,6 +6,9 @@
 body {
 	background-color: #EEE;
 }
+hr {
+	border-style: solid;
+}
 .navbar {
 	position: fixed;
 	right: 0;
@@ -85,7 +88,17 @@ body {
 	width: 100%;
 	.wrapper {
 		background-color: #FFF;
+		min-height: 100vh;
 		padding:30px 0;
+		h1, h2, h3, h4, h5, h6, b {
+			color: #666;
+		}
+		hr {
+			border-color: #eee;
+		}
+		table {
+			width: 100%;
+		}
 	}
 }
 
