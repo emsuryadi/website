@@ -110,14 +110,14 @@
 			"title": "Webpack Launcher",
 			"tags": ["VB .Net"],
 			"img": ["webpack", 2],
-			"article": "Aplikasi ini dibuat untuk mempermudah penggunaan Flask-MongoDB-Nginx stack pada windows, semacam XAMPP tapi untuk python. Jadi kita tidak perlu repot mengakses cmd saat ingin membuat virtual environment atau menjalankan aplikasi."
+			"article": "Aplikasi ini dibuat untuk mempermudah penggunaan Flask-MongoDB-Nginx stack pada windows, semacam XAMPP tapi untuk Python. Jadi kita tidak perlu repot mengakses cmd saat ingin membuat virtual environment atau menjalankan aplikasi."
 		},
 		{
 			"year": "",
 			"title": "",
 			"tags": [],
 			"img": [],
-			"article": "Sebenarnya masih banyak aplikasi atau proyek yang pernah saya buat pada rentang tahun 2011-2015. Tapi karena harddisk pada komputer lama saya rusak, mau tidak mau data aplikasi tersebut hilang. Sebelum itu saya belum mengenah Git, jadi data proyek hanya di simpan di harddisk."
+			"article": "Sebenarnya masih banyak aplikasi atau proyek yang pernah saya buat pada rentang tahun 2011-2015. Tapi karena harddisk pada komputer lama saya rusak, mau tidak mau data aplikasi tersebut hilang. Sebelum itu saya belum mengenah Git, jadi data proyek hanya disimpan pada harddisk."
 		}
 	]
 }
