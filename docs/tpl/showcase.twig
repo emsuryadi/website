@@ -5,9 +5,16 @@
 		{% for Item in Data.showcase %}
 		<!-- Item -->
 		<div class="showcase-content">
-			<span class="content-time"><i class="fa fa-calendar-o"></i> Tahun {{ Item.year }}</span>
-			<h2>{{ Item.title }} {% for Tag in Item.tags %}<span class="badge badge-info">{{ Tag }}</span> {% endfor %}</h2>
-			---
+			{% if Item.year %}<span class="content-time"><i class="fa fa-calendar-o"></i> Tahun {{ Item.year }}</span>{% endif %}
+			{% if Item.title %}<h2>{{ Item.title }} {% for Tag in Item.tags %}<span class="badge badge-info">{{ Tag }}</span> {% endfor %}</h2>{% endif %}
+			{% if Item.img %}
+				<div class="content-img">
+					{% for i in range(0, Item.img[1]) %}
+						<a href="data/img/{{ Item.img[0] }}_{{ i+1 }}.png"><img src="data/thumb/{{ Item.img[0] }}_{{ i+1 }}.jpg"/></a>
+					{% endfor %}
+				</div>
+			{% endif %}
+			{{ Item.article }}
 		</div>
 		{% endfor %}
 	</div>

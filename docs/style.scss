@@ -138,6 +138,21 @@ hr {
 					font-size: 14px;
 					color: #777;
 				}
+				.content-img {
+					margin-bottom: 10px;
+					img {
+						border-radius: 10px;
+						width: 64px;
+						height: 64px;
+						border: 2px solid #eee;
+						margin-bottom: 10px;
+						margin-right: 5px;
+						display: inline-block;
+						&:last-child {
+							margin-right: 0;
+						}
+					}
+				}
 			}
 		}
 	}

@@ -1,0 +1,124 @@
+{
+	"general": {
+		"sudah_menikah": false,
+		"sudah_bekerja": false,
+		"tempat_bekerja": "PT. Opat Apit",
+		"email": "mxsuryadi@gmail.com",
+		"phone": "+6289-6112-49822"
+	},
+	"ketrampilan": {
+		"it": [
+			["Installasi Hardware dan Software", 90],
+			["Installasi Jaringan", 85],
+			["Microsoft Office", 80],
+			["Visual Basic", 70],
+			["HTML, CSS (SASS), JS (jQuery)", 75],
+			["PHP (Slim Framework)", 75],
+			["Java (Android Studio, Kotlin)", 60],
+			["Python", 85],
+			["Git", 75],
+			["Linux", 80]
+		],
+		"non_it": [
+			["Bermain Alat Musik Drum", 75],
+			["Pertukangan", 60],
+			["Las Busur (Arc Welding)", 55],
+			["Sablon", 85],
+			["Bernafas", 100]
+		]
+	},
+	"showcase": [
+		{
+			"year": "2011",
+			"title": "Obav Antivirus",
+			"tags":	["VB6", "C", "ASM"],
+			"img": ["obav", 5],
+			"article": "Ini adalah proyek pertama saya dalam dunia pemrograman. Saat itu saya masih SMP. Saya sebenarnya hanya menjadi UI Designer dan juga maintainer. Foundernya adalah Oji Setyawan yang saat itu masih SMK."
+		},
+		{
+			"year": "2011",
+			"title": "Esperoka Quiz",
+			"tags":	["VB6"],
+			"img": [],
+			"article": "Sebuah game kuis yang saya buat untuk membantu siswa belajar. Soal kuisnya saya ambil dari LKS. Dan jika jawaban salah, maka game akan diulang dari soal nomor 1. Maka dari itu, siswa menjadi hafal soal dan jawabannya. Sayangnya, aplikasi ini hilang karena harddisk pada komputer saya rusak, jadi tidak ada screenshot."
+		},
+		{
+			"year": "2014",
+			"title": "Idayrus - School Management System",
+			"tags":	["Web", "VB6", "PHP"],
+			"img": ["idayrus", 9],
+			"article": "Dulu saat saya masih SMK, untuk mengisi data kehadiran, siswa harus mengisi tanda tangan pada buku absen. Proses ini memakan waktu lama dan tidak efisien. Maka dari itu saya coba menghubungi kepala jurusan untuk membuat aplikasi absen yang lebih efisien. Sebelumnya akan dipilih sistem sidik jari, namun teknologinya mahal dan tidak ramah pengguna. Saya mengusulkan untuk menggunakan barcode scanner dan disetujui."
+		},
+		{
+			"year": "2016",
+			"title": "Bearhug Sampling",
+			"tags":	["Web", "PHP", "VB .Net"],
+			"img": ["sampling", 1],
+			"article": "Bayangkan jika pekerjaan anda setiap harinya melakukan labeling pada ratusan gambar menggunakan aplikasi Photoshop, melelahkan bukan? Karena itu saya buat aplikasi untuk sampling gambar produk untuk mempercepat proses yang berulang ini."
+		},
+		{
+			"year": "2016",
+			"title": "Watermelon ID",
+			"tags":	["Web", "Python"],
+			"img": ["watermelon", 4],
+			"article": "Sebuah situs toko online yang saya buat dari nol, dari backend sampai frontend. Dibuat dengan framework Flask dan database MongoDB."
+		},
+		{
+			"year": "2017",
+			"title": "Snipnyet - Snippet Sharing",
+			"tags":	["Web", "Python"],
+			"img": ["snipnyet", 6],
+			"article": "Situs berbagi snippet yang saya buat dari nol. Tujuan utama dibuatnya aplikasi ini sebenarnya untuk mencatat potongan kode yang biasa dipakai."
+		},
+		{
+			"year": "2017",
+			"title": "Flask Kaccel",
+			"tags":	["Library", "Python"],
+			"img": ["kaccel", 2],
+			"article": "Sebuah library yang saya buat untuk mempermudah penggunaan fitur X-Accel pada Nginx melalui Flask. Jadi kita bisa serving file dengan limit tertentu."
+		},
+		{
+			"year": "2017",
+			"title": "Dunia Garmindo",
+			"tags":	["Web", "Python", "Android"],
+			"img": ["dg", 7],
+			"article": "Aplikasi ini dibuat untuk memanajemen produksi pada sebuah pabrik garmen di Solo. Dibuat dengan framework Flask dan database MongoDB."
+		},
+		{
+			"year": "2018",
+			"title": "Bearhug Reminder",
+			"tags":	["Web", "Python"],
+			"img": ["bearhug_reminder", 3],
+			"article": "Aplikasi untuk pengingat penagihan, dibuat dengan framework Flask dan MongoDB."
+		},
+		{
+			"year": "2018",
+			"title": "SMS Manager",
+			"tags":	["Web", "Python"],
+			"img": ["sms_manager", 8],
+			"article": "SMS Manager atau SMS Blaster yang dibuat dengan framework Flask dan PostgreSQL. Aplikasi ini akan mengirimkan SMS via Gammu."
+		},
+		{
+			"year": "2018",
+			"title": "QR Ticketing System",
+			"tags":	["Web", "Python", "Android"],
+			"img": ["tiket_kbk", 4],
+			"article": "Aplikasi ticketing yang dibuat dengan framework Flask dan database MongoDB. Memanfaatkan teknologi QR Scanner untuk validasi tiket."
+		},
+		{
+			"year": "2018",
+			"title": "Webpack Launcher",
+			"tags": ["VB .Net"],
+			"img": ["webpack", 2],
+			"article": "Aplikasi ini dibuat untuk mempermudah penggunaan Flask-MongoDB-Nginx stack pada windows, semacam XAMPP tapi untuk python. Jadi kita tidak perlu repot mengakses cmd saat ingin membuat virtual environment atau menjalankan aplikasi."
+		},
+		{
+			"year": "",
+			"title": "",
+			"tags": [],
+			"img": [],
+			"article": "Sebenarnya masih banyak aplikasi atau proyek yang pernah saya buat pada rentang tahun 2011-2015. Tapi karena harddisk pada komputer lama saya rusak, mau tidak mau data aplikasi tersebut hilang. Sebelum itu saya belum mengenah Git, jadi data proyek hanya di simpan di harddisk."
+		}
+	]
+}
+
