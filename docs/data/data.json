@@ -11,7 +11,8 @@
 			["Installasi Hardware dan Software", 90],
 			["Installasi Jaringan", 85],
 			["Microsoft Office", 80],
-			["Visual Basic", 70],
+			["Visual Basic .NET", 65],
+			["C#", 70],
 			["HTML, CSS (SASS), JS (jQuery)", 75],
 			["PHP (Slim Framework)", 75],
 			["Java (Android Studio, Kotlin)", 60],
@@ -48,6 +49,13 @@
 			"tags":	["Web", "VB6", "PHP"],
 			"img": ["idayrus", 9],
 			"article": "Dulu saat saya masih SMK, untuk mengisi data kehadiran, siswa harus mengisi tanda tangan pada buku absen. Proses ini memakan waktu lama dan tidak efisien. Maka dari itu saya coba menghubungi kepala jurusan untuk membuat aplikasi absen yang lebih efisien. Sebelumnya akan dipilih sistem sidik jari, namun teknologinya mahal dan tidak ramah pengguna. Saya mengusulkan untuk menggunakan barcode scanner dan disetujui."
+		},
+		{
+			"year": "2014",
+			"title": "Basscomp Auto Installer",
+			"tags":	["VB6"],
+			"img": ["basscomp", 2],
+			"article": "Saat menjalani Praktek Kerja Lapangan (PKL) saya ditempatkan di tempat service komputer bernama Bass Computer atau disingkat Basscomp. Saat itu saya diberi tugas untuk melakukan instalasi software yg lumayan banyak, dimana saya harus buka satu-persatu setup aplikasi tersebut dan menekan tombol 'next' berulang kali. Akhirnya saya buat software untuk otomatisasi kegiatan yg berulang tersebut dengan memanfaatkan Visual Basic 6 dan fitur silent install pada setup aplikasi."
 		},
 		{
 			"year": "2016",
@@ -111,6 +119,20 @@
 			"tags": ["VB .Net"],
 			"img": ["webpack", 2],
 			"article": "Aplikasi ini dibuat untuk mempermudah penggunaan Flask-MongoDB-Nginx stack pada windows, semacam XAMPP tapi untuk Python. Jadi kita tidak perlu repot mengakses cmd saat ingin membuat virtual environment atau menjalankan aplikasi."
+		},
+		{
+			"year": "2019",
+			"title": "Jangklik - Auto Clicker",
+			"tags": ["VB .Net"],
+			"img": ["jangklik", 4],
+			"article": "Saya buat software ini karena diluar sana saya belum menemukan software auto clicker yang melakukan click berdasarkan pencarian gambar."
+		},
+		{
+			"year": "2019",
+			"title": "Microngo - MongoDB Toolkit",
+			"tags": ["Library", "Python"],
+			"img": ["jangklik", 1],
+			"article": "Sebuah library yang membuat pymongo lebih mudah digunakan."
 		},
 		{
 			"year": "",
