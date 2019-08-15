@@ -10,11 +10,16 @@
 			{% if Item.img %}
 				<div class="content-img">
 					{% for i in range(0, Item.img[1]) %}
-						<a href="data/img/{{ Item.img[0] }}_{{ i+1 }}.png"><img src="data/thumb/{{ Item.img[0] }}_{{ i+1 }}.jpg"/></a>
+						<a href="data/img/{{ Item.img[0] }}_{{ i+1 }}.png" target="_blank"><img src="data/thumb/{{ Item.img[0] }}_{{ i+1 }}.jpg"/></a>
 					{% endfor %}
 				</div>
 			{% endif %}
 			{{ Item.article }}
+			{% if Item.url %}
+			<div>
+				<a href="{{ Item.url }}" target="_blank">{{ Item.url }}</a>
+			</div>
+			{% endif %}
 		</div>
 		{% endfor %}
 	</div>
