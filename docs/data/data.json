@@ -1,8 +1,8 @@
 {
 	"general": {
 		"sudah_menikah": false,
-		"sudah_bekerja": true,
-		"tempat_bekerja": "Lova Studio",
+		"sudah_bekerja": false,
+		"tempat_bekerja": "",
 		"email": "mxsuryadi@gmail.com",
 		"phone": "+6289-6112-49822"
 	},
