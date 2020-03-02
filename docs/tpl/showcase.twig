@@ -1,26 +1,36 @@
 <div class="col-lg-12">
 	<br /><hr /><br />
-	<h3><i class="fa fa-file-o"></i>&nbsp;&nbsp;Showcase</h3>
-	<div class="showcase">
+	<h3><i class="icon-doc"></i>&nbsp;&nbsp;Projects</h3>
+	<div class="showcase-timeline">
 		{% for Item in Data.showcase %}
-		<!-- Item -->
-		<div class="showcase-content">
-			{% if Item.year %}<span class="content-time"><i class="fa fa-calendar-o"></i> Tahun {{ Item.year }}</span>{% endif %}
-			{% if Item.title %}<h2>{{ Item.title }} {% for Tag in Item.tags %}<span class="badge badge-info">{{ Tag }}</span> {% endfor %}</h2>{% endif %}
-			{% if Item.img %}
-				<div class="content-img">
-					{% for i in range(0, Item.img[1]) %}
-						<a href="data/img/{{ Item.img[0] }}_{{ i+1 }}.png" target="_blank"><img src="data/thumb/{{ Item.img[0] }}_{{ i+1 }}.jpg"/></a>
-					{% endfor %}
+			<div class="post-style-outer">
+				<div class="post-style-inner">
+					<div class="post-content">
+						{% if Item.year %}<div class="post-time"><i class="icon-calendar-check-o"></i> Tahun {{ Item.year }}</div>{% endif %}
+						<div class="post-info">
+							{% if Item.title %}<h2 class="post-title">{{ Item.title }}</h2>{% endif %}
+							{{ Item.article }}
+							{% if Item.url %}
+							<div class="post-url">
+								<a href="{{ Item.url }}" target="_blank">{{ Item.url }}</a>
+							</div>
+							{% endif %}
+							{% if Item.tags %}
+								<div>
+								{% for Tag in Item.tags %}<span class="post-badge">{{ Tag }}</span> {% endfor %}
+								</div>
+							{% endif %}
+						</div>
+						{% if Item.img %}
+							<div class="post-img">
+								{% for i in range(0, Item.img[1]) %}
+									<a href="data/img/{{ Item.img[0] }}_{{ i+1 }}.png" target="_blank"><img src="data/thumb/{{ Item.img[0] }}_{{ i+1 }}.jpg"/></a>
+								{% endfor %}
+							</div>
+						{% endif %}
+					</div>
 				</div>
-			{% endif %}
-			{{ Item.article }}
-			{% if Item.url %}
-			<div>
-				<a href="{{ Item.url }}" target="_blank">{{ Item.url }}</a>
 			</div>
-			{% endif %}
-		</div>
 		{% endfor %}
 	</div>
 </div>

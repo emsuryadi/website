@@ -1,6 +1,6 @@
 /* Import Bootstrap */
 @import "etc/bootstrap/bootstrap-grid";
-@import "etc/font-awesome";
+@import "etc/fa-minimal";
 
 /* Style */
 body {
@@ -30,6 +30,17 @@ hr {
 		font-weight: bold;
 		font-size: 16px;
 		display: inline-block;
+	}
+}
+.badge-custom {
+	color: #1e88e5;
+	border: 1px solid #1e88e5;
+}
+.progress {
+	.progress-bar {
+		background-color: rgba($color: #1e88e5, $alpha: 0.75) !important;
+		//background-color: #FFF !important;
+		border: 2px solid #1e88e5;
 	}
 }
 .welcome {
@@ -79,7 +90,7 @@ hr {
 					list-style: none;
 					li {
 						display: inline-block;
-						margin-right: 15px;
+						margin-right: 5px;
 						&:last-child {
 							margin-right: 0;
 						}
@@ -124,32 +135,122 @@ hr {
 				}
 			}
 		}
-		.showcase {
-			.showcase-content {
-				border:1px solid #eee;
-				border-radius: 4px;
-				padding:10px 15px;
-				margin-bottom: 15px;
-				h2 {
-					font-size: 14px;
-					margin-bottom: 10px;
+		.showcase-timeline {
+			margin-top: 20px;
+			.post-style-outer {
+				margin-top:0;
+				margin-bottom:25px;
+				margin-left:20px;
+				position:relative;
+				box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+				border-radius:4px;
+				&:last-child {
+					&::before {
+						background-color: transparent;
+					}
 				}
-				.content-time {
-					font-size: 14px;
-					color: #777;
+				&::before {
+					background:#e1e1e1;
+					border-radius:2px;
+					bottom:-28px;
+					content:"";
+					height:100%;
+					left:-14px;
+					position:absolute;
+					width:1px
 				}
-				.content-img {
-					margin-bottom: 10px;
-					img {
-						border-radius: 10px;
-						width: 64px;
-						height: 64px;
-						border: 2px solid #eee;
-						margin-bottom: 10px;
-						margin-right: 5px;
-						display: inline-block;
-						&:last-child {
-							margin-right: 0;
+				&::after {
+					border:2px solid #3498db;
+					border-radius:50%;
+					content:"";
+					height:11px;
+					left:-19px;
+					position:absolute;
+					top:10px;
+					width:11px
+				}
+				.post-style-inner {
+					background:#fff;
+					border:1px solid #e1e1e1;
+					border-radius:4px;
+					position:relative;
+					&::before{
+						border-right:5px solid #e1e1e1;
+						border-style:solid;
+						border-width:5px;
+						color:transparent;
+						content:"";
+						display:block;
+						height:0;
+						position:absolute;
+						left:-10px;
+						top:10px;
+						width:0
+					}
+					&::after{
+						border-right:5px solid #fff;
+						border-style:solid;
+						border-width:5px;
+						color:transparent;
+						content:"";
+						display:block;
+						height:0;
+						position:absolute;
+						left:-9px;
+						top:10px;
+						width:0
+					}
+					.post-content{
+						.post-time {
+							font-size: 14px;
+							color: #2196f3;
+							padding: 10px 15px;
+							border-bottom: 1px solid #f2f2f2;
+						}
+						.post-info {
+							padding: 15px;
+							.post-title {
+								font-size: 16px;
+								margin:0;
+								margin-bottom: 5px;
+								color: #666;
+							}
+							.post-url {
+								margin-top: 5px;
+							}
+							.post-badge {
+								margin-top: 15px;
+								border: 1px solid #2196f3;
+								color: #2196f3;
+								border-radius: 4px;
+								padding: 3px 7px;
+								display: inline-block;
+								font-size: 10px;
+								font-weight: bold;
+							}
+						}
+						.post-img {
+							border-top: 1px solid #f2f2f2;
+							padding: 15px 15px 5px 15px;
+							//background-color: #f7f7f7;
+							border-radius: 0 0 4px 4px;
+							a {
+								&:last-child {
+									img {
+										margin-right: 0;
+									}
+								}
+							}
+							img {
+								box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+								border-radius: 4px;
+								width: 56px;
+								height: 56px;
+								//border: 1px solid #2196f3;
+								margin-right: 10px;
+								margin-bottom: 10px;
+								display: inline-block;
+							}
 						}
 					}
 				}

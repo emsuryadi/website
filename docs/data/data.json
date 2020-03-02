@@ -29,25 +29,33 @@
 	},
 	"showcase": [
 		{
+			"year": "2020",
+			"title": "Monitoring Pajak",
+			"tags": ["Web", "Python"],
+			"img": ["monitoring_pajak", 1],
+			"url": null,
+			"article": "Adalah sebuah aplikasi yang digunakan untuk monitoring pajak pada perusahaan High Speed Railway Contractor Consortium (HSRCC)."
+		},
+		{
 			"year": "2019",
 			"title": "Microngo - MongoDB Toolkit",
 			"tags": ["Library", "Python"],
 			"img": ["microngo", 1],
-			"url": "http://microngo.emsuryadi.com/",
+			"url": "https://microngo.emsuryadi.com/",
 			"article": "Sebuah library yang membuat pymongo lebih mudah digunakan."
 		},
 		{
 			"year": "2019",
 			"title": "Jangklik - Auto Clicker",
-			"tags": ["C#"],
+			"tags": ["Desktop", "C#"],
 			"img": ["jangklik", 4],
-			"url": "http://jangklik.emsuryadi.com/",
+			"url": "https://jangklik.emsuryadi.com/",
 			"article": "Saya buat software ini karena diluar sana saya belum menemukan software auto clicker yang melakukan click berdasarkan pencarian gambar."
 		},
 		{
 			"year": "2018",
 			"title": "Webpack Launcher",
-			"tags": ["VB .Net"],
+			"tags": ["Desktop", "VB .Net"],
 			"img": ["webpack", 2],
 			"url": null,
 			"article": "Aplikasi ini dibuat untuk mempermudah penggunaan Flask-MongoDB-Nginx stack pada windows, semacam XAMPP tapi untuk Python. Jadi kita tidak perlu repot mengakses cmd saat ingin membuat virtual environment atau menjalankan aplikasi."
@@ -89,7 +97,7 @@
 			"title": "Flask Kaccel",
 			"tags":	["Library", "Python"],
 			"img": ["kaccel", 2],
-			"url": "http://flask-kaccel.readthedocs.io/",
+			"url": "https://flask-kaccel.readthedocs.io/",
 			"article": "Sebuah library yang saya buat untuk mempermudah penggunaan fitur X-Accel pada Nginx melalui Flask. Jadi kita bisa serving file dengan limit tertentu."
 		},
 		{
@@ -97,7 +105,7 @@
 			"title": "Snipnyet - Snippet Sharing",
 			"tags":	["Web", "Python"],
 			"img": ["snipnyet", 6],
-			"url": "http://snipnyet.com/",
+			"url": "https://snipnyet.com/",
 			"article": "Situs berbagi snippet yang saya buat dari nol. Tujuan utama dibuatnya aplikasi ini sebenarnya untuk mencatat potongan kode yang biasa dipakai."
 		},
 		{
@@ -105,7 +113,7 @@
 			"title": "Watermelon ID",
 			"tags":	["Web", "Python"],
 			"img": ["watermelon", 4],
-			"url": "http://www.watermelon.id/",
+			"url": "https://www.watermelon.id/",
 			"article": "Sebuah situs toko online yang saya buat dari nol, dari backend sampai frontend. Dibuat dengan framework Flask dan database MongoDB."
 		},
 		{
@@ -119,7 +127,7 @@
 		{
 			"year": "2014",
 			"title": "Basscomp Auto Installer",
-			"tags":	["VB6"],
+			"tags":	["Desktop", "VB6"],
 			"img": ["basscomp", 2],
 			"url": null,
 			"article": "Saat menjalani Praktek Kerja Lapangan (PKL) saya ditempatkan di tempat service komputer bernama Bass Computer atau disingkat Basscomp. Saat itu saya diberi tugas untuk melakukan instalasi software yg lumayan banyak, dimana saya harus buka satu-persatu setup aplikasi tersebut dan menekan tombol 'next' berulang kali. Akhirnya saya buat software untuk otomatisasi kegiatan yg berulang tersebut dengan memanfaatkan Visual Basic 6 dan fitur silent install pada setup aplikasi."
@@ -135,7 +143,7 @@
 		{
 			"year": "2011",
 			"title": "Esperoka Quiz",
-			"tags":	["VB6"],
+			"tags":	["Desktop", "VB6"],
 			"img": [],
 			"url": null,
 			"article": "Sebuah game kuis yang saya buat untuk membantu siswa belajar. Soal kuisnya saya ambil dari LKS. Dan jika jawaban salah, maka game akan diulang dari soal nomor 1. Maka dari itu, siswa menjadi hafal soal dan jawabannya. Sayangnya, aplikasi ini hilang karena harddisk pada komputer saya rusak, jadi tidak ada screenshot."
@@ -143,7 +151,7 @@
 		{
 			"year": "2011",
 			"title": "Obav Antivirus",
-			"tags":	["VB6", "C", "ASM"],
+			"tags":	["Desktop", "VB6", "C", "ASM"],
 			"img": ["obav", 5],
 			"url": null,
 			"article": "Ini adalah proyek pertama saya dalam dunia pemrograman. Saat itu saya masih SMP. Saya sebenarnya hanya menjadi UI Designer dan juga maintainer. Foundernya adalah Oji Setyawan yang saat itu masih SMK."
