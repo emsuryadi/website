@@ -62,5 +62,5 @@ $(document).ready(function(){
 			}, getRndInteger(100, 200));
 		}, getRndInteger(3000, 10000));
 	}
-	kedip();
+	//kedip();
 });

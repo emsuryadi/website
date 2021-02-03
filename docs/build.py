@@ -51,39 +51,39 @@ def cropped_thumbnail(img, size):
 
 # Function
 def base64_str(val):
-	Data = val.encode('UTF-8')
-	Data = b64encode(Data)
-	return Data.decode('UTF-8')
+	data = val.encode('UTF-8')
+	data = b64encode(data)
+	return data.decode('UTF-8')
 
 # Loader
-FileLoader	= FileSystemLoader('tpl')
-JinjaEnv	= Environment(loader=FileLoader, autoescape=select_autoescape(['html', 'xml']))
-JinjaEnv.globals['base64_str'] = base64_str
+file_loader	= FileSystemLoader('tpl')
+jinja_env	= Environment(loader=file_loader, autoescape=select_autoescape(['html', 'xml']))
+jinja_env.globals['base64_str'] = base64_str
 
 # Read data
-DataFile	= open("data/data.json", "r")
-DataDict	= json_loads(DataFile.read())
+data_file	= open("data/data.json", "r")
+data_dict	= json_loads(data_file.read())
 
 # Render
-TemplateData	= JinjaEnv.get_template('base.twig')
-TemplateString	= TemplateData.render(Data=DataDict)
+template_data	= jinja_env.get_template('base.twig')
+template_string	= template_data.render(data=data_dict)
 
 # Process Image
-for ShowcaseItem in DataDict.get("showcase"):
-	ImgData	= ShowcaseItem.get("img")
-	if ImgData:
-		for i in range(0, ImgData[1]):
-			ImgFilename	= "%s_%s" % (ImgData[0], i+1)
-			ImgFilepath	= "data/img/%s.png" % (ImgFilename)
-			if path.isfile(ImgFilepath):
-				Picture = Image.open(ImgFilepath).convert('RGB')
-				Picture = cropped_thumbnail(Picture, (80, 80))
-				Picture.save("data/thumb/%s.jpg" % (ImgFilename), "JPEG")
+for showcase_item in data_dict.get("showcase"):
+	img_data	= showcase_item.get("img")
+	if img_data:
+		for i in range(0, img_data[1]):
+			img_filename	= "%s_%s" % (img_data[0], i+1)
+			img_filepath	= "data/img/%s.png" % (img_filename)
+			if path.isfile(img_filepath):
+				picture = Image.open(img_filepath).convert('RGB')
+				picture = cropped_thumbnail(picture, (80, 80))
+				picture.save("data/thumb/%s.jpg" % (img_filename), "JPEG")
 
 # Save to file
 try:
 	with open('index.html', 'w') as file:
-		file.write(htmlmin.minify(TemplateString))
+		file.write(htmlmin.minify(template_string))
 
 except Exception as e:
 	print("* Error:", e)

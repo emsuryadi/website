@@ -7,7 +7,7 @@
 			<h4>Bidang IT</h4>
 			<table class="table">
 				<tbody>
-					{% for title, value in Data.ketrampilan.it %}
+					{% for title, value in data.ketrampilan.it %}
 						<tr>
 							<td>{{ title }}</td>
 							<td style="width:50%"><div class="progress"><div class="progress-bar" role="progressbar" style="width: {{ value }}%;" aria-valuenow="{{ value }}" aria-valuemin="0" aria-valuemax="100"></div></div></td>
@@ -20,7 +20,7 @@
 			<h4>Bidang Non-IT</h4>
 			<table class="table">
 				<tbody>
-					{% for title, value in Data.ketrampilan.non_it %}
+					{% for title, value in data.ketrampilan.non_it %}
 						<tr>
 							<td>{{ title }}</td>
 							<td style="width:50%"><div class="progress"><div class="progress-bar" role="progressbar" style="width: {{ value }}%;" aria-valuenow="{{ value }}" aria-valuemin="0" aria-valuemax="100"></div></div></td>
